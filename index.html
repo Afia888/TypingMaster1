@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Typing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <!-- Dark/Light Toggle -->
+  <div class="lightDarkBox">
+    <label class="swich">
+      <input type="checkbox" id="modeSwitch">
+      <span class="sliidr"></span>
+    </label>
+    <span id="modeText">☀️ Light</span>
+  </div>
+  <div class="contner">
+    <h1>Typing Master</h1>
+    <div class="optz">
+      <div class="o-row">
+        <label>Difficulty</label>
+        <select id="diffLv">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="o-row">
+        <label>Mode</label>
+        <select id="modCh">
+          <option value="timer">Timer</option>
+          <option value="score">Score</option>
+        </select>
+      </div>
+    </div>
+    <div class="quoteArea" id="quoteHere"></div>
+    <textarea id="inputBox" placeholder="start typing now..."></textarea>
+    <div class="btn-area">
+      <button id="btnStart">Start</button>
+      <button id="btnStop">Finish</button>
+    </div>
+    <div class="stats">
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="acc">0%</span></p>
+      <p>Errors: <span id="errs">0</span></p>
+      <p>Time Left: <span id="leftTime">--</span></p>
+    </div>
+  </div>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
